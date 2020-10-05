@@ -42,6 +42,12 @@
     font-weight: bold;
 }
 
+:root{
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
+
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
