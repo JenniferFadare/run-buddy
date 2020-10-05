@@ -639,7 +639,17 @@ section {
     background: #39a6b2;
 }
 
+div {
+    color: purple;
+    font-size: 20px;
+    transition-duration: 2s;
+    
+}
 
+div:hover {
+    font-size: 200px;
+    color: black;
+}
 
 
 
