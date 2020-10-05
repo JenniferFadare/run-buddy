@@ -2,19 +2,13 @@
 
 @media screen and (max-width: 980px) {
     header {
-     padding-bottom: 0;
-     justify-content: center;
+        padding-bottom: 0;
+        justify-content: center;
     }
 
     header h1 {
-        width: 100%;
+        width: 100;
         text-align: center;
-    }
-
-    header nav ul {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: center;
     }
 
     header nav ul li a {
@@ -42,15 +36,19 @@
         flex: 0 70%;
     }
 
-    .contact-info iframe {
+    .contact-info iframe{
         flex: 1 100%;
     }
 }
-
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
+    }
+
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
     }
 
     .step-info {
@@ -70,38 +68,37 @@
         flex: 100%;
     }
 }
-
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+ 
     .hero-form button {
-        width: 100%;
-      }
-    
-      .section-title {
+        width: 100%
+    }
+
+    .section-title {
         width: 95%;
-      }
-    
-      .intro p {
+    }
+
+    .intro p {
         width: 100%;
-      }
-    
-      .trainer {
+    }
+
+    .trainer {
         flex: 0 100%;
-      }
-    
-      .contact-info {
+    }
+
+    .contact-info {
         text-align: center;
-      }
-    
-      .contact-info > * {
+    }
+
+    .contact-info > * {
         flex: 0 100%;
-      }
+    }
 
-      .contact-form {
-          order: 3;
-      }
+    .contact-form {
+        order: 3;
+    }
 }
-
 * {
     margin:0;
     padding:0;
@@ -199,8 +196,8 @@ section {
 /*Hero Style End*/
 
 .hero-cta {
-    width: 35%;
-    text-align: right;
+    width: 65%;
+    text-align: center;
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
