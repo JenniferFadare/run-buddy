@@ -499,16 +499,80 @@ section {
 .trainer {
     
     margin: 20px;
-    background: #024e76;
+    background: rgba(2, 77, 118, 1);
     color: #fce138;
-    flex: 1;
-    
+    flex: 1;   
+
 }
 
-.trainer img {
-    width: 100%;
-    
+.trainer-1 {
+    background-image: url("../images/trainer-1.jpg");
+    background-size: cover;
+    position: relative;
+  
 }
+
+.trainer-2 {
+    background-image: url("../images/trainer-2.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.trainer-3 {
+    background-image: url("../images/trainer-3.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.trainer-img {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.trainer-img h3 {
+    position: relative;
+    font-size: 28px;
+    z-index: 55;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    top: 200px;
+    transition: .5s;
+}
+
+.trainer-img h4 {
+    position: relative;
+    font-size: 22px;
+    z-index: 55;
+    padding-left: 15px;
+    top: 200px;
+    transition: .5s;
+}
+
+
+
+.trainer-img::after {
+    content:"";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(252, 225, 56, .3) 10%, rgba(2, 78,118, 1) 90%);
+    position: absolute;
+    top: 0;
+    left: 0;  
+    opacity: 0;
+    transition: all .5s;
+}
+
+.trainer:hover .trainer-img::after {
+    opacity: 1;
+}
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px;
+}
+
 
 .trainer-bio {
     padding: 25px;
@@ -516,14 +580,12 @@ section {
 }
 
 .trainer-bio h3 {
-    font-size: 28px;
-    
+    font-size: 28px;  
 }
 
 .trainer-bio h4 {
     font-weight: lighter;
-    font-size:22px;
-    margin-bottom: 15px;
+    font-size:22px;  
 }
 
 .trainer-bio p {
@@ -597,7 +659,6 @@ section {
 .contact-form input:focus, .contact-form textarea:focus {
     background-color: rgba(255, 255, 255, 1);
     outline: none;
-}
 }
 
 .contact-form button {
